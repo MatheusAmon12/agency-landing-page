@@ -8,13 +8,69 @@
     />
     <title>Agência LM</title>
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/src/styles/components/mesh-gradient-background.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div
-      class="text-4xl font-bold h-screen w-screen flex items-center justify-center"
-    >
-      Applying tailwindcss
+  <body class="overflow-x-hidden">
+    <!-- Hero section -->
+    <div class="mesh-gradient-background-container min-h-svh">
+      <div class="mesh-gradient-background"></div>
+      <section class="w-full py-20 lg:p-0 z-10">
+        <div
+          class="container px-5 flex flex-col lg:flex-row items-center justify-center min-h-svh w-full mx-auto"
+        >
+          <div
+            class="flex flex-col gap-8 items-center md:items-start justify-center text-white md:justify-start w-full md:w-1/2"
+          >
+            <div
+              class="flex flex-col gap-1 items-center md:items-start justify-center md:justify-start w-full"
+            >
+              <h1
+                class="text-4xl font-normal text-center md:text-left md:max-w-3xl"
+              >
+                Sua clínica é única
+              </h1>
+              <h2
+                class="text-4xl lg:text-6xl font-bold text-center md:text-left md:max-w-3xl"
+              >
+                Sua presença digital também precisa ser.
+              </h2>
+            </div>
+
+            <p
+              class="text-base font-normal text-center md:text-left md:max-w-3xl"
+            >
+              Landing Pages autênticas, sofisticadas e estratégicas que
+              transformam sua clínica em referência no digital, atraindo
+              clientes certos todos os dias.
+            </p>
+
+            <div
+              class="flex flex-wrap items-center justify-center md:justify-start gap-4 w-full"
+            >
+              <button
+                class="bg-purple-500 px-10 py-5 text-lg font-medium rounded-full text-white w-full md:w-fit cursor-pointer hover:scale-105 transition-all ease-in-out duration-300 shadow-md hover:shadow-xl"
+              >
+                Garantir minha landing page
+              </button>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img
+              src="/src/public/mockup.webp"
+              alt="Mockup"
+              title="Mockup"
+              loading="lazy"
+              class="object-cover pointer-events-none"
+            />
+          </div>
+        </div>
+      </section>
     </div>
   </body>
 </html>
