@@ -194,13 +194,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // final cta
   gsap.from("#final-cta-content", {
-    y: "100vh",
+    y: "-50%",
     opacity: 0,
     ease: "circ",
     scrollTrigger: {
       trigger: "#final-cta-section",
       start: "top 100px",
-      end: "bottom 600px",
+      end: "bottom 200px",
+      markers: true,
       scrub: true,
     },
   });
