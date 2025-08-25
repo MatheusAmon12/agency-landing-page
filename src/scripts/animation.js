@@ -85,4 +85,55 @@ document.addEventListener("DOMContentLoaded", () => {
       scrub: true,
     },
   });
+
+  // benefits cards
+  gsap.from("#benefit-one", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#benefits-section",
+      start: "top 500px",
+      end: "bottom 400px",
+      scrub: true,
+    },
+  });
+
+  gsap.from("#benefit-two", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#benefits-section",
+      start: "top 500px",
+      end: "bottom 400px",
+      scrub: true,
+    },
+  });
+
+  gsap.from("#benefit-three", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#benefits-section",
+      start: "top 500px",
+      end: "bottom 400px",
+      scrub: true,
+    },
+  });
+
+  gsap.from("#benefit-four", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#benefits-section",
+      start: "top 500px",
+      end: "bottom 400px",
+      scrub: true,
+    },
+  });
+
+  gsap.from("#benefit-five", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: "#benefits-section",
+      start: "top 500px",
+      end: "bottom 400px",
+      scrub: true,
+    },
+  });
 });
