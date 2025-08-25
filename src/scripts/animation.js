@@ -219,4 +219,9 @@ document.addEventListener("DOMContentLoaded", () => {
       repeat: -1,
     }
   );
+
+  window.addEventListener("beforeunload", () => {
+    ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    gsap.globalTimeLine.clear();
+  });
 });
