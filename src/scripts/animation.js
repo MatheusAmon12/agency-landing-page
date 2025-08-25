@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     scrollTrigger: {
         trigger: "#hero-section",
         duration: 1,
-        markers: true,
         start: "top 100px"
     }
   })
@@ -149,4 +148,29 @@ document.addEventListener("DOMContentLoaded", () => {
       scrub: true,
     },
   });
+
+  // about our service
+  gsap.from("#our-service-content", {
+    x: "-100vw",
+    duration: 1,
+    opacity: 0,
+    ease: "circ",
+    scrollTrigger: {
+        trigger: "#our-service-section",
+        duration: 1,
+        start: "top 100px"
+    }
+  })
+
+  gsap.from("#mockup-two-container", {
+    x: "100vw",
+    duration: 1,
+    opacity: 0,
+    ease: "circ",
+    scrollTrigger: {
+        trigger: "#our-service-section",
+        duration: 1,
+        start: "top 100px"
+    }
+  })
 });
