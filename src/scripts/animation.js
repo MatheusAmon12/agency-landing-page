@@ -201,7 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: "#final-cta-section",
       start: "top 100px",
       end: "bottom 200px",
-      markers: true,
       scrub: true,
     },
   });
