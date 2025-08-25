@@ -1,11 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
+  // hero
+  gsap.from("#mockup-one-container", {
+    x: "100vw",
+    duration: 1,
+    opacity: 0,
+    ease: "circ",
+    scrollTrigger: {
+        trigger: "#hero-section",
+        duration: 1,
+        markers: true,
+        start: "top 100px"
+    }
+  })
+
   // project cards
   gsap.from("#project-card-one", {
     x: "-100vw",
     duration: 1,
-    opacity: 0,
     opacity: 0,
     scrollTrigger: {
       trigger: "#cta-section",
