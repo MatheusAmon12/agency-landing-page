@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 0,
     ease: "circ",
     scrollTrigger: {
-        trigger: "#hero-section",
-        duration: 1,
-        start: "top 100px"
-    }
-  })
+      trigger: "#hero-section",
+      duration: 1,
+      start: "top 100px",
+    },
+  });
 
   // project cards
   gsap.from("#project-card-one", {
@@ -156,11 +156,10 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 0,
     ease: "circ",
     scrollTrigger: {
-        trigger: "#our-service-section",
-        duration: 1,
-        start: "top 100px"
-    }
-  })
+      trigger: "#our-service-section",
+      start: "top 100px",
+    },
+  });
 
   gsap.from("#mockup-two-container", {
     x: "100vw",
@@ -168,9 +167,22 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: 0,
     ease: "circ",
     scrollTrigger: {
-        trigger: "#our-service-section",
-        duration: 1,
-        start: "top 100px"
-    }
-  })
+      trigger: "#our-service-section",
+      start: "top 100px",
+    },
+  });
+
+  // final cta
+  gsap.from("#final-cta-content", {
+    y: "100vh",
+    opacity: 0,
+    ease: "circ",
+    scrollTrigger: {
+      trigger: "#final-cta-section",
+      start: "top 100px",
+      end: "bottom 600px",
+      markers: true,
+      scrub: true,
+    },
+  });
 });
