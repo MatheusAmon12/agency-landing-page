@@ -1,7 +1,27 @@
 document.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
+  gsap.registerPlugin(SplitText);
 
   // hero
+  document.fonts.ready.then(() => {
+    gsap.set("#headline-content", { opacity: 1 });
+
+    let splittedHeadline = SplitText.create("#headline", {
+      type: "words",
+      aria: "hidden",
+    });
+
+    gsap.from(splittedHeadline.words, {
+      opacity: 0,
+      duration: 2,
+      ease: "sine.out",
+      stagger: 0.25,
+      repeat: -1,
+      yoyo: true,
+      onComplete: () => split.revert(),
+    });
+  });
+
   gsap.from("#mockup-one-container", {
     x: "100vw",
     duration: 1,
@@ -181,7 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: "#final-cta-section",
       start: "top 100px",
       end: "bottom 600px",
-      markers: true,
       scrub: true,
     },
   });

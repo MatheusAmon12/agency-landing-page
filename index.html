@@ -73,6 +73,7 @@
               class="flex flex-col gap-8 items-center md:items-start justify-center text-white md:justify-start w-full md:w-1/2"
             >
               <div
+                id="headline-content"
                 class="flex flex-col gap-1 items-center md:items-start justify-center md:justify-start w-full"
               >
                 <h1
@@ -80,8 +81,16 @@
                 >
                   Sua clínica é única
                 </h1>
-                <h2
+                <div
+                  aria-hidden="true"
+                  id="headline"
                   class="text-4xl lg:text-6xl font-bold text-center md:text-left md:max-w-3xl"
+                >
+                  Sua presença digital também precisa ser.
+                </div>
+                <h2
+                  aria-hidden="true"
+                  class="sr-only text-4xl lg:text-6xl font-bold text-center md:text-left md:max-w-3xl"
                 >
                   Sua presença digital também precisa ser.
                 </h2>
@@ -584,9 +593,12 @@
         </section>
 
         <!-- Final CTA section -->
-        <section id="final-cta-section" class="container px-5 mx-auto w-full lg:p-0">
+        <section
+          id="final-cta-section"
+          class="container px-5 mx-auto w-full lg:p-0"
+        >
           <div
-          id="final-cta-content"
+            id="final-cta-content"
             class="final-cta-card flex flex-col items-center gap-10 md:p-10 rounded-xl md:border md:border-purple-500 relative w-fit mx-auto"
           >
             <div class="space-y-4 text-center">
@@ -659,5 +671,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
   </body>
 </html>
