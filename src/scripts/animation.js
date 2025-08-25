@@ -204,4 +204,19 @@ document.addEventListener("DOMContentLoaded", () => {
       scrub: true,
     },
   });
+
+  // call to action buttons
+  gsap.fromTo(
+    ".cta-animate",
+    {
+      scale: 0.9,
+    },
+    {
+      scale: 1.1,
+      duration: 1,
+      ease: "circ",
+      yoyo: true,
+      repeat: -1,
+    }
+  );
 });
