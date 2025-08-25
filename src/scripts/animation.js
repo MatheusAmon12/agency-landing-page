@@ -63,4 +63,26 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   });
 
+  // offer cards
+  gsap.from("#offer-card-one", {
+    rotation: -360,
+    x: "-100%",
+    scrollTrigger: {
+      trigger: "#offer-section",
+      start: "top 700px",
+      end: "bottom 750px",
+      scrub: true,
+    },
+  });
+
+  gsap.from("#offer-card-two", {
+    rotation: 360,
+    x: "100%",
+    scrollTrigger: {
+      trigger: "#offer-section",
+      start: "top 700px",
+      end: "bottom 750px",
+      scrub: true,
+    },
+  });
 });
