@@ -34,6 +34,10 @@
       src="https://kit.fontawesome.com/3349982834.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="src/scripts/animation.js"
+      defer
+    ></script>
   </head>
   <body class="overflow-x-hidden">
     <div class="mesh-gradient-background-container min-h-svh">
@@ -111,6 +115,7 @@
 
         <!-- CTA section -->
         <section
+          id="cta-section"
           class="container px-5 mx-auto flex flex-col items-center justify-center gap-10"
         >
           <div class="space-y-4">
@@ -125,6 +130,7 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             <div
+              id="project-card-one"
               class="card flex flex-col gap-4 items-start justify-center p-4"
             >
               <img
@@ -147,6 +153,7 @@
               >
             </div>
             <div
+              id="project-card-two"
               class="card flex flex-col gap-4 items-start justify-center p-4"
             >
               <img
@@ -169,6 +176,7 @@
               >
             </div>
             <div
+              id="project-card-three"
               class="card flex flex-col gap-4 items-start justify-center p-4"
             >
               <img
@@ -191,6 +199,7 @@
               >
             </div>
             <div
+              id="project-card-four"
               class="card flex flex-col gap-4 items-start justify-center p-4"
             >
               <img
@@ -213,6 +222,7 @@
               >
             </div>
             <div
+              id="project-card-five"
               class="card flex flex-col gap-4 items-start justify-center p-4"
             >
               <img
@@ -235,6 +245,7 @@
               >
             </div>
             <div
+              id="project-card-six"
               class="card flex flex-col gap-4 items-start justify-center p-4"
             >
               <img
@@ -266,9 +277,15 @@
         </section>
 
         <!-- Offer section -->
-        <section class="container px-5 mx-auto w-full lg:p-0">
+        <section
+          id="offer-section"
+          class="container px-5 mx-auto w-full lg:p-0"
+        >
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div class="card flex flex-col p-4 gap-5">
+            <div
+              id="offer-card-one"
+              class="card flex flex-col p-4 gap-5"
+            >
               <div class="flex gap-1 items-center justify-start">
                 <i
                   class="fa-solid fa-star-half-stroke text-xl text-purple-500"
@@ -345,7 +362,10 @@
                 Garantir promoção
               </button>
             </div>
-            <div class="card flex flex-col p-4 gap-5">
+            <div
+              id="offer-card-two"
+              class="card flex flex-col p-4 gap-5"
+            >
               <div class="flex gap-1 items-center justify-start">
                 <i class="fa-solid fa-star text-xl text-purple-500"></i>
                 <h3 class="capitalize text-white">landing page avançada</h3>
@@ -611,5 +631,8 @@
         </section>
       </main>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
   </body>
 </html>
