@@ -35,7 +35,6 @@
 
 @import "./components/card.css";
 @import "./components/header.css";
-@import "./components/mesh-gradient-background.css";
 
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
@@ -68,4 +67,6 @@
 body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
+  background-color: hsl(310 100% 15%);
 }
