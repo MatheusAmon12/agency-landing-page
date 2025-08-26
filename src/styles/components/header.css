@@ -1,7 +1,1 @@
-.header {
-  background: rgba(200, 0, 212, 0.03);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(19px);
-  -webkit-backdrop-filter: blur(19px);
-  border: 0 0 1px 0 solid rgba(200, 0, 212, 0.3);
-}
+.header{background:rgb(200 0 212 / .03);box-shadow:0 4px 30px rgb(0 0 0 / .1);backdrop-filter:blur(19px);-webkit-backdrop-filter:blur(19px);border:0 0 1px 0 solid rgb(200 0 212 / .3)}
