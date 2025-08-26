@@ -1,0 +1,10 @@
+const handleSeeMoreButtonClick = (e)=>{
+    const t = e.target.nextElementSibling, n = e.target.firstElementChild;
+    t.classList.toggle("hidden"), n.classList.toggle("rotate-180");
+};
+document.addEventListener("DOMContentLoaded", ()=>{
+    const e = document.querySelectorAll(".see-more-button");
+    e.forEach((e)=>e.addEventListener("click", handleSeeMoreButtonClick)), window.addEventListener("beforeunload", ()=>e.forEach((e)=>e.removeEventListener("click", handleSeeMoreButtonClick)));
+});
+
+//# sourceMappingURL=agency-landing-page.4c5a5627.js.map

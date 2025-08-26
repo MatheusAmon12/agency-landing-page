@@ -1,0 +1,27 @@
+{
+  "name": "agency-landing-page",
+  "version": "1.0.0",
+  "description": "[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)\r [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)\r [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)\r [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=gsap&logoColor=white)](https://greensock.com/gsap/)\r [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusAmon12/agency-landing-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MatheusAmon12/agency-landing-page/issues"
+  },
+  "homepage": "https://github.com/MatheusAmon12/agency-landing-page#readme",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.15.4",
+    "@parcel/transformer-webmanifest": "^2.15.4",
+    "parcel": "^2.15.4"
+  }
+}
