@@ -64,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from("#offer-card-one", {
       rotation: -360,
       x: "-100%",
+      opacity: 0,
       scrollTrigger: {
         trigger: "#offer-section",
         start: "top 740px",
@@ -74,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gsap.from("#offer-card-two", {
       rotation: 360,
       x: "100%",
+      opacity: 0,
       scrollTrigger: {
         trigger: "#offer-section",
         start: "top 740px",
