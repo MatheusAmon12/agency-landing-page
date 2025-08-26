@@ -101,8 +101,9 @@ document.addEventListener("DOMContentLoaded", () => {
     x: "-100%",
     scrollTrigger: {
       trigger: "#offer-section",
-      start: "top 700px",
+      start: "top 740px",
       end: "bottom 750px",
+      markers: true,
       scrub: true,
     },
   });
@@ -112,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     x: "100%",
     scrollTrigger: {
       trigger: "#offer-section",
-      start: "top 700px",
+      start: "top 740px",
       end: "bottom 750px",
       scrub: true,
     },
