@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-purple-500: oklch(62.7% 0.265 303.9);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-white: #fff;
@@ -264,6 +265,12 @@
   .w-full {
     width: 100%;
   }
+  .max-w-1 {
+    max-width: calc(var(--spacing) * 1);
+  }
+  .max-w-\[1140px\] {
+    max-width: 1140px;
+  }
   .rotate-180 {
     rotate: 180deg;
   }
@@ -379,6 +386,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-purple-500) 10%, transparent);
     }
+  }
+  .bg-red-500 {
+    background-color: var(--color-red-500);
   }
   .object-cover {
     object-fit: cover;
@@ -684,28 +694,56 @@
     }
   }
 }
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TheSeasons";
+  src: url("../fonts/The-Seasons-Bold.woff2") format("woff2"), url("../fonts/The-Seasons-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 .card {
-  background: rgb(111 2 109 / .03);
+  background: rgb(111 2 109 / 0.03);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / .1);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgb(111 2 109 / .72);
+  border: 1px solid rgb(111 2 109 / 0.72);
 }
 .final-cta-card {
-  background: rgb(14 12 14 / .35);
+  background: rgb(14 12 14 / 0.35);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgb(0 0 0 / .1);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
   backdrop-filter: blur(17.1px);
   -webkit-backdrop-filter: blur(17.1px);
-  border: 1px solid rgb(111 2 109 / .72);
+  border: 1px solid rgb(111 2 109 / 0.72);
 }
 .header {
-  background: rgb(200 0 212 / .03);
-  box-shadow: 0 4px 30px rgb(0 0 0 / .1);
+  background: rgb(200 0 212 / 0.03);
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
   backdrop-filter: blur(19px);
   -webkit-backdrop-filter: blur(19px);
-  border: 0 0 1px 0 solid rgb(200 0 212 / .3);
+  border: 0 0 1px 0 solid rgb(200 0 212 / 0.3);
 }
 .mesh-gradient-background-container {
   position: relative;
@@ -719,7 +757,7 @@
   height: 100%;
   z-index: -1;
   background-color: hsl(289 0% 3%);
-  background-image: radial-gradient(circle at 52% 73%,hsl(289 0% 3%) 0,transparent 50%),radial-gradient(circle at 0% 30%,hsl(310 100% 15%) 0,transparent 50%),radial-gradient(circle at 41% 26%,hsl(310 100% 15%) 0,transparent 50%),radial-gradient(circle at 41% 51%,hsl(310 100% 15%) 0,transparent 50%),radial-gradient(circle at 41% 88%,hsl(289 0% 3%) 0,transparent 50%),radial-gradient(circle at 76% 73%,hsl(289 0% 3%) 0,transparent 50%),radial-gradient(circle at 29% 37%,HSL(112 0% 3%) 0,transparent 50%);
+  background-image: radial-gradient( circle at 52% 73%, hsl(289 0% 3%) 0, transparent 50% ), radial-gradient(circle at 0% 30%, hsl(310 100% 15%) 0, transparent 50%), radial-gradient(circle at 41% 26%, hsl(310 100% 15%) 0, transparent 50%), radial-gradient(circle at 41% 51%, hsl(310 100% 15%) 0, transparent 50%), radial-gradient(circle at 41% 88%, hsl(289 0% 3%) 0, transparent 50%), radial-gradient(circle at 76% 73%, hsl(289 0% 3%) 0, transparent 50%), radial-gradient(circle at 29% 37%, HSL(112 0% 3%) 0, transparent 50%);
   background-size: 350% 350%;
   filter: blur(1px);
   animation: moveBackground 15s linear infinite;
@@ -759,40 +797,6 @@
     background-size: 100% 100%;
   }
 }
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Regular.woff2) format("woff2"),url(../fonts/Poppins-Regular.woff) format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Medium.woff2) format("woff2"),url(../fonts/Poppins-Medium.woff) format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins-Bold.woff2) format("woff2"),url(../fonts/Poppins-Bold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "TheSeasons";
-  src: url(../fonts/The-Seasons-Bold.woff2) format("woff2"),url(../fonts/The-Seasons-Bold.woff) format("woff");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-.bg-clinic {
-  background-image: url(/public/clinic-background.webp);
-  background-size: cover;
-  background-position: center;
-  opacity: .1;
-}
 .sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -803,26 +807,26 @@
   width: 1px;
 }
 .font-poppins {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .font-poppins-regular {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 .font-poppins-medium {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
 .font-poppins-bold {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 .font-theseasons {
-  font-family: "TheSeasons",serif;
+  font-family: "TheSeasons", serif;
   font-weight: 700;
 }
 body {
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
 @property --tw-space-y-reverse {

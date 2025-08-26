@@ -1,1 +1,16 @@
-.card{background:rgb(111 2 109 / .03);border-radius:16px;box-shadow:0 4px 30px rgb(0 0 0 / .1);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgb(111 2 109 / .72)}.final-cta-card{background:rgb(14 12 14 / .35);border-radius:16px;box-shadow:0 4px 30px rgb(0 0 0 / .1);backdrop-filter:blur(17.1px);-webkit-backdrop-filter:blur(17.1px);border:1px solid rgb(111 2 109 / .72)}
+.card {
+  background: rgb(111 2 109 / 0.03);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgb(111 2 109 / 0.72);
+}
+.final-cta-card {
+  background: rgb(14 12 14 / 0.35);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
+  backdrop-filter: blur(17.1px);
+  -webkit-backdrop-filter: blur(17.1px);
+  border: 1px solid rgb(111 2 109 / 0.72);
+}
