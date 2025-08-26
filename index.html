@@ -6,14 +6,41 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Agência LM</title>
+    <meta
+      name="theme-color"
+      content="#6b21a8"
+    />
 
     <link
       rel="stylesheet"
       type="text/css"
       href="./src/styles/output.css"
     />
-    
+    <link
+      rel="preload"
+      href="./fonts/Poppins-Regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/Poppins-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./src/styles/output.css"
+      as="style"
+    />
+    <link
+      rel="preload"
+      href="./public/mockup.webp"
+      as="image"
+    />
+
     <script
       src="https://kit.fontawesome.com/3349982834.js"
       crossorigin="anonymous"
@@ -26,6 +53,8 @@
       src="./src/scripts/see-more-button-toggle.js"
       defer
     ></script>
+
+    <title>Agência LM</title>
   </head>
   <body class="overflow-x-hidden">
     <div class="mesh-gradient-background-container min-h-svh">
@@ -39,6 +68,8 @@
               src="./public/lm-logo.svg"
               alt="Logo Agência LM"
               loading="lazy"
+              width="40"
+              height="40"
               class="pointer-events-none size-10"
             />
             <h1 class="font-bold text-lg text-white hidden md:block">
@@ -717,8 +748,17 @@
       </main>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"
+      defer
+    ></script>
   </body>
 </html>

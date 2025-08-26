@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@import "./components/card.css";
-@import "./components/header.css";
-@import "./components/mesh-gradient-background.css";
 
 @font-face {
   font-family: "Poppins";
@@ -38,6 +35,10 @@
   font-style: normal;
   font-display: swap;
 }
+
+@import "./components/card.css";
+@import "./components/header.css";
+@import "./components/mesh-gradient-background.css";
 
 .bg-clinic {
   background-image: url("/public/clinic-background.webp");
