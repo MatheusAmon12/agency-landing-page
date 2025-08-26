@@ -38,6 +38,10 @@
       src="src/scripts/animation.js"
       defer
     ></script>
+    <script
+      src="src/scripts/see-more-button-toggle.js"
+      defer
+    ></script>
   </head>
   <body class="overflow-x-hidden">
     <div class="mesh-gradient-background-container min-h-svh">
@@ -300,7 +304,7 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div
               id="offer-card-one"
-              class="card flex flex-col p-4 gap-5"
+              class="card flex flex-col items-start p-4 gap-5"
             >
               <div class="flex gap-1 items-center justify-start">
                 <i
@@ -326,7 +330,14 @@
                 </div>
               </div>
 
-              <ul class="space-y-2 mt-5">
+              <button
+                class="md:hidden see-more-button cursor-pointer text-white text-xs"
+              >
+                Ver detalhes
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <ul class="hidden md:block space-y-2 mt-5">
                 <li class="flex items-center gap-1">
                   <i class="fa-solid fa-circle-check text-purple-500"></i>
                   <span class="text-white text-sm font-normal"
@@ -384,7 +395,7 @@
             </div>
             <div
               id="offer-card-two"
-              class="card flex flex-col p-4 gap-5"
+              class="card flex flex-col items-start p-4 gap-5"
             >
               <div class="flex gap-1 items-center justify-start">
                 <i class="fa-solid fa-star text-xl text-purple-500"></i>
@@ -407,7 +418,14 @@
                 </div>
               </div>
 
-              <ul class="space-y-2 mt-5">
+              <button
+                class="md:hidden see-more-button cursor-pointer text-white text-xs"
+              >
+                Ver detalhes
+                <i class="fa-solid fa-chevron-down"></i>
+              </button>
+
+              <ul class="hidden md:block space-y-2 mt-5">
                 <li class="flex items-center gap-1">
                   <i class="fa-solid fa-circle-check text-purple-500"></i>
                   <span class="text-white text-sm font-normal"

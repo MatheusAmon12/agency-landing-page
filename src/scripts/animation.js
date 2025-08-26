@@ -103,7 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
       trigger: "#offer-section",
       start: "top 740px",
       end: "bottom 750px",
-      markers: true,
       scrub: true,
     },
   });
