@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         scrollTrigger: {
             trigger: "#hero-section",
             duration: 1,
-            start: "top 100px"
+            start: "top 300px"
         }
     }), gsap.from("#project-card-one", {
         x: "-100vw",
